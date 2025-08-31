@@ -11,4 +11,4 @@ if uploaded_file:
         f.write(uploaded_file.getbuffer())
         st.image(uploaded_file, caption='uploaded Image',use_container_width=True)
         prediction=predict(img_path)
-        st.info(f"predicted class:{prediction}")
+        st.info(f"{prediction}")
